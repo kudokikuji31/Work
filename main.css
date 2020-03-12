@@ -1,0 +1,154 @@
+
+.grid-container {
+	display: grid;
+	grid-template-columns: 30% 40% 30%;
+	grid-gap: 10px;
+	background-color: lightslategrey;
+}
+
+.grid-container > div{
+	border: 5px dashed linen;
+	
+	
+}
+
+#header{grid-column: 1/ span 3;
+	text-align: center;
+	font-size: 45px;
+	background-color: midnightblue;
+	color: navajowhite;
+	
+}
+
+#main1{
+	grid-column: 1 / span 1 ;
+	text-align: left;
+	padding:2px;
+	margin-left: 5px ;
+	margin-right:0px;
+	background-color:midnightblue;
+	color: navajowhite;
+
+}
+
+#main2{
+	grid-column: 2/ span 1;
+	text-align: center;
+	background-color: midnightblue;
+	color: navajowhite;
+
+}
+
+
+#right{
+	grid-column: 3/ span 1;
+	text-align: center;
+	margin-left: 10px;
+	margin-right: 5px;
+	background-color: midnightblue;
+	color: navajowhite;
+}
+
+#footer{
+	grid-column: 1 / span 3 ;
+	font-size: 30px;
+	text-align: center;
+	color: navajowhite;
+	background-color: midnightblue;
+	
+}
+@media only screen and (max-width: 768px){
+	.grid-container{
+		display: grid;
+		grid-template-columns: auto 20%;
+		grid-gap: 10px;
+	}
+	#header{grid-column: 1/ span 2;
+		font-size:20px ;
+		
+	}
+	
+	#main1{grid-column: 1/ span 2;
+	}
+	
+	#main2{grid-column: 1/ span 1;
+		
+	
+	}
+	
+	
+	#right{grid-column: 2/ span 1;
+		
+		
+	
+	}
+	
+	#footer{grid-column: 1/ span 2;
+		
+	}
+}
+
+@media only screen and (max-width: 500px){
+	.grid-container{
+		display: grid;
+		grid-template-columns: auto;
+		grid-gap: 2px;
+	}
+	#header{grid-column: 1/ span 1;
+		
+	}
+	
+	#main1{grid-column: 1/ span 1;
+	}
+	
+	#main2{grid-column: 1/ span 1;
+		
+	
+	}
+	
+	
+	#right{grid-column: 1/ span 1;
+	}
+	
+	#footer{grid-column: 1/ span 1;
+		
+}
+}
+h2{
+	background-color: palevioletred;
+	text-align: center;
+	flex-wrap: wrap;
+}
+#topbar{
+    overflow: hidden;
+    background-color: rgb(6, 1, 12);
+    
+}
+#topbar a{
+    display: block;
+    float: left;
+    color: #F2F2F2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+#topbar a:hover{
+    background-color: #DDD;
+    color: #000;
+}
+#topbar a.active{
+    background-color: deepskyblue;
+	color: #FFF;
+}
+.pic{
+	width: 100px;
+	height: auto;
+}
+div{
+	font-size: 50px;
+	text-align: center;
+}
+body{
+	background-color: antiquewhite;
+}
